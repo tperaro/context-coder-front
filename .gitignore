@@ -4,12 +4,16 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+ .pnp/
+ .pnp.js
 
 ## Build outputs
 dist/
 build/
 out/
 .parcel-cache/
+ .next/
+ .turbo/
 
 ## Vite
 .vite/
@@ -24,18 +28,26 @@ out/
 .env.development.local
 .env.test.local
 .env.production.local
+.envrc
 
 ## Logs
 *.log
 logs/
 npm-debug.log*
 yarn-debug.log*
+.eslintcache
+.pids
+*.pid
+*.seed
 
 ## Editor/IDE
 .vscode/
 .idea/
 *.sublime-workspace
 *.sublime-project
+.vscode-test/
+.history/
+.code-workspace
 
 ## OS
 .DS_Store
@@ -48,6 +60,8 @@ coverage/
 ## Docker
 docker-compose.override.yml
 Dockerfile.*.local
+.docker/
+.env.docker
 
 ## Tests
 /jest-*.json
@@ -56,3 +70,18 @@ Dockerfile.*.local
 .cache/
 *.bak
 *.tmp
+.sass-cache/
+.serverless/
+node_repl_history
+*.local
+*.log.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+venv/
+ENV/
+env/
+.venv/
