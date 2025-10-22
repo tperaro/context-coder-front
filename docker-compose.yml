@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: context-coder-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      # URL do backend - ajuste conforme necessário
+      - VITE_API_URL=${VITE_API_URL:-http://localhost:8000}
+    command: npm run dev -- --host 0.0.0.0
+    restart: unless-stopped
+    networks:
+      - context-coder-network
+
+networks:
+  context-coder-network:
+    driver: bridge
+
+# Volume para persistir node_modules
+volumes:
+  node_modules:

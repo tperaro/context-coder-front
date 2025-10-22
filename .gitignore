@@ -1,0 +1,58 @@
+## Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+## Build outputs
+dist/
+build/
+out/
+.parcel-cache/
+
+## Vite
+.vite/
+
+## TypeScript
+*.tsbuildinfo
+
+## Env files
+.env
+.env.*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+## Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+## Editor/IDE
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Coverage
+coverage/
+.nyc_output/
+
+## Docker
+docker-compose.override.yml
+Dockerfile.*.local
+
+## Tests
+/jest-*.json
+
+## Misc
+.cache/
+*.bak
+*.tmp
